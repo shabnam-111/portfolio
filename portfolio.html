@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazi Shabnam Ali • Data Analyst &amp; Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@400;700&amp;display=swap');
+        
+        :root {
+            --accent: #41C9E2;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(180deg, #0B192C 0%, #132D4F 100%);
+        }
+
+        .nav-dot {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+        }
+
+        .nav-dot.active {
+    color: #41C9E2 !important;
+    font-weight: 600;
+        }
+
+        .nav-dot.active::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #41C9E2;
+    border-radius: 50%;
+    top: 50%;
+    left: -14px;
+    transform: translateY(-50%);
+        }
+
+        .nav-dot:hover {
+    color: #41C9E2;
+        }
+
+        .tilt-card {
+            transition: transform 0.12s cubic-bezier(0.23, 1, 0.32, 1);
+            transform-style: preserve-3d;
+        }
+
+        #frame-container {
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+        }
+
+        #hero-frame {
+            image-rendering: -webkit-optimize-contrast;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .skill-tag {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px) scale(1.08);
+    box-shadow: 0 10px 15px -3px rgba(65, 201, 226, 0.3);
+}
+    </style>
+</head>
+<body class="bg-[#0B192C] text-white overflow-x-hidden">
+    <!-- FLOATING NAV -->
+    <!-- UPDATED FLOATING NAV CAPSULE - Dark Text -->
+    <header class="fixed top-6 left-1/2 -translate-x-1/2 z-50">
+        <div class="bg-white/90 backdrop-blur-2xl px-8 py-3.5 rounded-3xl border border-white/30 shadow-2xl flex items-center gap-x-3 text-sm">
+        <span class="w-2 h-2 bg-[#41C9E2] rounded-full"></span>
+        <span class="font-semibold text-[#0B192C]">Kazi Shabnam Ali</span>
+        <span class="w-px h-4 bg-[#0B192C]/20"></span>
+        <span class="text-[#0B192C]/70 font-medium">Data Analyst • Full-Stack Developer</span>
+        </div>
+        </header>
+
+<!-- COMPACT LEFT TIMELINE NAV -->
+<nav class="fixed left-2 top-1/2 -translate-y-1/2 z-50 hidden lg:flex flex-col items-center">
+    <div class="bg-white/10 backdrop-blur-2xl w-10 h-[200px] rounded-3xl flex flex-col items-center py-5 shadow-xl border border-white/20">
+        
+        <div onclick="scrollToSection(0)" class="nav-dot flex-1 flex items-center justify-center cursor-pointer text-xs font-mono text-white/50 hover:text-[#41C9E2] transition-all" id="dot-00">
+            00
+        </div>
+        <div onclick="scrollToSection(1)" class="nav-dot flex-1 flex items-center justify-center cursor-pointer text-xs font-mono text-white/50 hover:text-[#41C9E2] transition-all active" id="dot-01">
+            01
+        </div>
+        <div onclick="scrollToSection(2)" class="nav-dot flex-1 flex items-center justify-center cursor-pointer text-xs font-mono text-white/50 hover:text-[#41C9E2] transition-all" id="dot-02">
+            02
+        </div>
+        <div onclick="scrollToSection(3)" class="nav-dot flex-1 flex items-center justify-center cursor-pointer text-xs font-mono text-white/50 hover:text-[#41C9E2] transition-all" id="dot-03">
+            03
+        </div>
+        <div onclick="scrollToSection(4)" class="nav-dot flex-1 flex items-center justify-center cursor-pointer text-xs font-mono text-white/50 hover:text-[#41C9E2] transition-all" id="dot-04">
+            04
+        </div>
+
+    </div>
+</nav> 
+
+<!-- HERO SECTION - FINAL OPTIMIZED TEXT LAYOUT -->
+<section id="hero" class="hero-bg min-h-[240vh] relative">
+    <div class="sticky top-0 h-screen w-full overflow-hidden">
+        <div class="w-full h-full">
+            <div class="grid grid-cols-12 items-center h-full relative">
+                
+                <!-- Left Content -->
+                
+<div class="col-span-12 lg:col-span-5 pt-12 lg:pt-20 relative z-10 px-6 lg:px-16">
+    <div class="space-y-5">
+        <div class="inline-flex items-center gap-x-2 text-[#41C9E2] text-sm tracking-[3px] font-medium">
+            <div class="w-6 h-px bg-[#41C9E2]"></div>
+            GURUGRAM, INDIA
+        </div>
+        
+        <!-- Name - Forced single line, still biggest -->
+        <h1 class="text-[2.9rem] md:text-[3.6rem] lg:text-[4.2rem] leading-none font-semibold tracking-[-2px] heading-serif whitespace-nowrap text-white">
+    KAZI SHABNAM ALI
+</h1>
+        
+        <!-- Title - Single line -->
+        <div class="text-[1.35rem] md:text-[1.6rem] text-white/90 font-light tracking-tight whitespace-nowrap">
+            Data Analyst &amp; Full-Stack Developer
+        </div>
+        
+        <!-- Full Bio - Fully visible -->
+        <p class="max-w-md text-[1.05rem] md:text-base text-white/70 leading-relaxed">
+            Detail-oriented B.Tech CSE (Data Science) student. Passionate about data visualization, sustainable tech, and building impactful full-stack applications.
+        </p>
+        
+        <button onclick="document.getElementById('now-section').scrollIntoView({ behavior: 'smooth' })"
+                class="mt-6 group px-8 py-4 bg-white text-[#0B192C] rounded-2xl font-medium flex items-center gap-x-3 hover:bg-[#41C9E2] hover:text-white transition-all">
+            EXPLORE MY WORK
+            <i class="fa-solid fa-arrow-right group-active:rotate-45 transition"></i>
+        </button>
+    </div>
+</div>
+
+                <!-- Right Visual -->
+                <div class="absolute inset-0 z-0">
+                    <img
+                        id="hero-frame"
+                        src="./day_frames/001.png"
+                        alt="Hero Animation Frame"
+                        class="w-full h-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#0B192C] via-[#0B192C]/50 to-transparent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- NOW SECTION -->
+    
+<!-- NOW SECTION - ENHANCED CARD BACKGROUNDS -->
+<section id="now-section" class="bg-white py-24 text-[#0B192C]">
+    <div class="max-w-screen-2xl mx-auto px-8">
+        <div class="max-w-5xl ml-12 lg:ml-28">
+            <div class="flex justify-between items-baseline border-b border-[#0B192C]/10 pb-8 mb-12">
+                <div>
+                    <span class="text-xs font-mono tracking-widest">NOW • JUNE 2026</span>
+                    <h2 class="text-6xl heading-serif font-semibold tracking-tight">A data-driven engineer<br>who thinks in systems</h2>
+                </div>
+                <div class="text-right text-sm font-medium">CURRENT FOCUS</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="group relative border border-[#0B192C]/10 rounded-3xl p-8 hover:border-[#41C9E2] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-white">
+                    <div class="absolute inset-0 bg-[radial-gradient(at_40%_30%,rgba(65,201,226,0.15)_0%,transparent_60%)] group-hover:opacity-100 opacity-60 transition-opacity"></div>
+                    <div class="relative z-10">
+                        <div class="uppercase text-xs tracking-widest mb-6 text-[#41C9E2] font-medium">RECENT WORK</div>
+                        <div class="text-3xl font-semibold mb-3 leading-tight">Airbnb Analytics Dashboard</div>
+                        <div class="text-sm text-[#0B192C]/70 leading-relaxed">Market trends, pricing insights, and occupancy analysis</div>
+                        <div class="mt-8 h-1 w-12 bg-[#41C9E2]/40 group-hover:w-20 transition-all rounded"></div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative border border-[#0B192C]/10 rounded-3xl p-8 hover:border-[#41C9E2] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-white">
+                    <div class="absolute inset-0 bg-[radial-gradient(at_40%_30%,rgba(65,201,226,0.15)_0%,transparent_60%)] group-hover:opacity-100 opacity-60 transition-opacity"></div>
+                    <div class="relative z-10">
+                        <div class="uppercase text-xs tracking-widest mb-6 text-[#41C9E2] font-medium">CAREER GOAL</div>
+                        <div class="text-3xl font-semibold mb-3 leading-tight">Data Analyst &amp; Full-Stack Engineer</div>
+                        <div class="text-sm text-[#0B192C]/70 leading-relaxed">Growing expertise in analytics, front-end engineering, and modern web development.</div>
+                        <div class="mt-8 h-1 w-12 bg-[#41C9E2]/40 group-hover:w-20 transition-all rounded"></div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative border border-[#0B192C]/10 rounded-3xl p-8 hover:border-[#41C9E2] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-white">
+                    <div class="absolute inset-0 bg-[radial-gradient(at_40%_30%,rgba(65,201,226,0.15)_0%,transparent_60%)] group-hover:opacity-100 opacity-60 transition-opacity"></div>
+                    <div class="relative z-10">
+                        <div class="uppercase text-xs tracking-widest mb-6 text-[#41C9E2] font-medium">EXPLORING</div>
+                        <div class="text-3xl font-semibold mb-3 leading-tight">Business Intelligence</div>
+                        <div class="text-sm text-[#0B192C]/70 leading-relaxed">Turning complex data into actionable decisions.</div>
+                        <div class="mt-8 h-1 w-12 bg-[#41C9E2]/40 group-hover:w-20 transition-all rounded"></div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group relative border border-[#0B192C]/10 rounded-3xl p-8 hover:border-[#41C9E2] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-white">
+                    <div class="absolute inset-0 bg-[radial-gradient(at_40%_30%,rgba(65,201,226,0.15)_0%,transparent_60%)] group-hover:opacity-100 opacity-60 transition-opacity"></div>
+                    <div class="relative z-10">
+                        <div class="uppercase text-xs tracking-widest mb-6 text-[#41C9E2] font-medium">DEPLOYED</div>
+                        <div class="text-3xl font-semibold mb-3 leading-tight">Personal Portfolio</div>
+                        <div class="text-sm text-[#0B192C]/70 leading-relaxed">A modern digital space showcasing projects, skills, and professional growth.</div>
+                        <div class="mt-8 h-1 w-12 bg-[#41C9E2]/40 group-hover:w-20 transition-all rounded"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- BACKGROUND & WORKING STYLE -->
+    <!-- BACKGROUND & WORKING STYLE - SHIFTED RIGHT -->
+    <section class="bg-[#0B192C] py-24">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="max-w-4xl ml-8 lg:ml-16">
+                <div class="flex items-center gap-x-4 mb-8">
+                    <span class="text-xs font-mono text-[#41C9E2]">01</span>
+                    <span class="uppercase tracking-widest">BACKGROUND &amp; WORKING STYLE</span>
+                </div>
+                <h2 class="text-7xl heading-serif font-light leading-none">Where <span class="italic text-[#41C9E2]">Analytics </span>Meets <span class="italic text-[#41C9E2]">Engineering</span></h2>
+                <div class="mt-12 text-lg text-white/80 leading-relaxed max-w-2xl">
+                Passionate about transforming complex data into actionable insights while building modern, scalable web applications that deliver meaningful value.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VITALS + TIMELINE -->
+    
+<section class="bg-white py-24 text-[#0B192C]">
+    <div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-12 gap-16">
+        <!-- Left Timeline -->
+        <div class="col-span-12 lg:col-span-7">
+            <div class="mb-12 ml-12 lg:ml-24">
+                <span class="text-lg font-medium tracking-widest text-[#41C9E2]">MY EXPERIENCE</span>
+            </div>
+            <div class="space-y-14 text-xl ml-12 lg:ml-24">
+                <div class="flex gap-8">
+                    <div class="w-32 font-mono text-sm shrink-0">May – Aug 2025</div>
+                    <div>
+                        <strong>Full-Stack Web Development Intern</strong><br>
+                        Unified Mentor Pvt. Ltd.
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="w-32 font-mono text-sm shrink-0">Jul – Aug 2024</div>
+                    <div>
+                        <strong>Data Science Intern</strong><br>
+                        Remarkskill Education
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Vitals -->
+        <div class="col-span-12 lg:col-span-5">
+            <div class="sticky top-28 space-y-10">
+                <div>
+                    <div class="text-lg font-medium tracking-widest text-[#41C9E2]">CURRENTLY</div>
+                    <div class="text-3xl font-semibold mt-3">B.Tech Student &amp; Developer</div>
+                </div>
+                <div>
+                    <div class="text-lg font-medium tracking-widest text-[#41C9E2]">BASED IN</div>
+                    <div class="text-3xl font-semibold mt-3">Gurugram, Haryana</div>
+                </div>
+                <div>
+                    <div class="text-lg font-medium tracking-widest text-[#41C9E2]">OPEN TO</div>
+                    <div class="text-3xl font-semibold mt-3">Data Analyst Roles</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION SECTION -->
+<<section id="education" class="bg-[#0B192C] py-24 text-white">
+    <div class="max-w-screen-2xl mx-auto px-8">
+        <div class="ml-12 lg:ml-24">
+
+            <!-- Section Heading -->
+            <div class="mb-16">
+                <h2 class="heading-serif text-6xl font-light tracking-tighter text-[#41C9E2]">
+                    Education
+                </h2>
+            </div>
+
+            <!-- Education Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                <!-- Blue Bells Model School -->
+                <div class="tilt-card group relative aspect-[20/13] bg-zinc-900 rounded-3xl overflow-hidden cursor-pointer">
+                    <img
+                        src="C:\Users\shabn\OneDrive\Desktop\MY PORTFOLIO\BBMS.png"
+                        alt="Blue Bells Model School"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70"></div>
+
+                    <div class="absolute bottom-0 left-0 p-10 text-white">
+                        <div class="uppercase text-xs tracking-widest text-[#41C9E2] font-extrabold">
+                            SCHOOLING
+                        </div>
+                        <div class="text-4xl font-semibold">
+                            Blue Bells Model School
+                        </div>
+                        <p class="mt-4 opacity-90">
+                            Higher Secondary Education
+                        </p>
+                    </div>
+                </div>
+
+                <!-- K.R. Mangalam University -->
+                <div class="tilt-card group relative aspect-[20/13] bg-zinc-900 rounded-3xl overflow-hidden cursor-pointer">
+                    <img
+                        src="C:\Users\shabn\OneDrive\Desktop\MY PORTFOLIO\KRMU.png"
+                        alt="K.R. Mangalam University"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70"></div>
+
+                    <div class="absolute bottom-0 left-0 p-10 text-white">
+                        <div class="uppercase text-xs tracking-widest text-[#41C9E2] font-extrabold">
+                            UNIVERSITY
+                        </div>
+                        <div class="text-4xl font-semibold">
+                            K.R. Mangalam University
+                        </div>
+                        <p class="mt-4 opacity-90">
+                            B.Tech CSE (Data Science)<br>
+                            Currently Pursuing
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- TWO STUDIES -->
+<!-- TWO STUDIES (02) - WHITE BACKGROUND + UPDATED PROJECTS -->
+<section id="studies" class="bg-white py-24 text-[#0B192C]">
+    <div class="max-w-screen-2xl mx-auto px-8">
+        <div class="max-w-4xl ml-12 lg:ml-24">
+            <div class="mb-16">
+                <span class="text-xs font-mono text-black">02</span>
+                <h2 class="heading-serif text-7xl font-light tracking-tighter text-black">
+                    Two studies in<br>
+                    <span class="italic text-[#41C9E2]">vision and action</span>
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Project 1: Domino's -->
+                <div id="card1" class="tilt-card group relative aspect-[16/13] bg-zinc-900 rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="C:\Users\shabn\OneDrive\Desktop\MY PORTFOLIO\dominos cover.png" alt="Domino's Website" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70"></div>
+                    <div class="absolute bottom-0 left-0 p-10 text-white">
+                        <div class="uppercase text-xs tracking-widest text-[#FFD400]">PROJECT 01</div>
+                        <div class="text-4xl font-semibold">Domino's Website</div>
+                        <p class="mt-4 opacity-90">Modern, responsive pizza ordering platform with intuitive UI/UX</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Airbnb Analytics Dashboard -->
+                <div id="card2" class="tilt-card group relative aspect-[16/13] bg-zinc-900 rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="C:\Users\shabn\OneDrive\Desktop\MY PORTFOLIO\airbnb.png" alt="Airbnb Analytics Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70"></div>
+                    <div class="absolute bottom-0 left-0 p-10 text-white">
+                        <div class="uppercase text-xs tracking-widest text-[#FFD400]">PROJECT 02</div>
+                        <div class="text-4xl font-semibold">Airbnb Analytics Dashboard</div>
+                        <p class="mt-4 opacity-90">Market trends, pricing insights, and occupancy analysis dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SECTION 03: SKILLS & PASSIONS -->
+<section id="skills-section" class="bg-[#0B192C] py-24 text-white">
+    <div class="max-w-screen-2xl mx-auto px-8">
+        <div class="max-w-5xl ml-12 lg:ml-24">
+            <div class="mb-16">
+                <span class="text-xs font-mono text-[#41C9E2]">03</span>
+                <h2 class="heading-serif text-6xl font-light tracking-tighter">Skills &amp; Passions</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Left Column -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-[#41C9E2]">Technical Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-6 py-3 bg-white/10 hover:bg-[#41C9E2] hover:text-[#0B192C] rounded-full text-sm font-medium transition-all duration-300 cursor-pointer hover:scale-110 hover:shadow-lg">Python</span>
+                        <span class="skill-tag px-6 py-3 bg-white/10 hover:bg-[#41C9E2] hover:text-[#0B192C] rounded-full text-sm font-medium transition-all duration-300 cursor-pointer hover:scale-110 hover:shadow-lg">HTML / CSS</span>
+                        <span class="skill-tag px-6 py-3 bg-white/10 hover:bg-[#41C9E2] hover:text-[#0B192C] rounded-full text-sm font-medium transition-all duration-300 cursor-pointer hover:scale-110 hover:shadow-lg">Power BI</span>
+                        <span class="skill-tag px-6 py-3 bg-white/10 hover:bg-[#41C9E2] hover:text-[#0B192C] rounded-full text-sm font-medium transition-all duration-300 cursor-pointer hover:scale-110 hover:shadow-lg">Matplotlib</span>
+                        <span class="skill-tag px-6 py-3 bg-white/10 hover:bg-[#41C9E2] hover:text-[#0B192C] rounded-full text-sm font-medium transition-all duration-300 cursor-pointer hover:scale-110 hover:shadow-lg">Seaborn</span>
+                        <span class="skill-tag px-6 py-3 bg-white/10 hover:bg-[#41C9E2] hover:text-[#0B192C] rounded-full text-sm font-medium transition-all duration-300 cursor-pointer hover:scale-110 hover:shadow-lg">Excel</span>
+                        <span class="skill-tag px-6 py-3 bg-white/10 hover:bg-[#41C9E2] hover:text-[#0B192C] rounded-full text-sm font-medium transition-all duration-300 cursor-pointer hover:scale-110 hover:shadow-lg">Canva</span>
+                    </div>
+
+                    <!-- Image under Technical Skills -->
+                    <div class="mt-12">
+                        <img src="C:\Users\shabn\OneDrive\Desktop\MY PORTFOLIO\skills logo.png" 
+                             alt="Skills &amp; Passions" 
+                             class="w-full rounded-3xl shadow-2xl">
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-10">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-[#41C9E2]">Languages</h3>
+                        <p class="text-lg">English, Hindi, Bengali</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-[#41C9E2]">Certifications</h3>
+                        <ul class="space-y-3 text-lg">
+                            <li>• Data Analysis with Python</li>
+                            <li>• Data Visualization with Python</li>
+                            <li>• Dean’s List Certificate</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-[#41C9E2]">Extra-Curricular</h3>
+                        <p class="text-lg leading-relaxed">
+                            • Event Volunteer - DEEKSHAARAMBH Freshman Orientation 2024<br>
+                            <br>
+                            • Team Member at Elven D’ Tribe (Thrift Fashion &amp; Sustainable Initiatives)
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-[#41C9E2]">Hobbies</h3>
+                        <div class="flex flex-wrap gap-4 text-lg">
+                            <span class="px-5 py-2 bg-white/10 rounded-full">Travelling</span>
+                            <span class="px-5 py-2 bg-white/10 rounded-full">Listening to Music</span>
+                            <span class="px-5 py-2 bg-white/10 rounded-full">Dancing</span>
+                            <span class="px-5 py-2 bg-white/10 rounded-full">Walking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 04: LET'S CONNECT -->
+<section id="connect-section" class="bg-white py-24 text-[#0B192C]">
+    <div class="max-w-screen-2xl mx-auto px-8">
+        <div class="max-w-4xl ml-12 lg:ml-24 text-center">
+            
+            <!-- 04 Label -->
+            <div class="mb-8">
+                <span class="text-xs font-mono text-black">04</span>
+            </div>
+
+            <h2 class="text-6xl heading-serif font-light tracking-tighter mb-8">Let's build something meaningful together</h2>
+            <p class="text-xl text-[#0B192C]/70 mb-12">Open to opportunities in Data Analysis, Full-Stack Development &amp; Product roles.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-10">
+                <a href="https://github.com/shabnam-111" target="_blank"
+                   class="px-10 py-5 bg-[#0B192C] text-white rounded-2xl font-medium hover:bg-[#41C9E2] transition-all flex items-center justify-center gap-3 text-lg">
+                    <i class="fa-brands fa-github"></i>
+                    Connect on GitHub
+                </a>
+                <a href="https://linkedin.com/in/shabnam-ali-kazi" target="_blank"
+                   class="px-10 py-5 border-2 border-[#0B192C] rounded-2xl font-medium hover:bg-[#0B192C] hover:text-white transition-all flex items-center justify-center gap-3 text-lg">
+                    <i class="fa-brands fa-linkedin"></i>
+                    Connect on LinkedIn
+                </a>
+            </div>
+
+            <div class="text-lg">
+                Or email me directly at 
+                <a href="mailto:shabnamali742@yahoo.com" class="font-medium hover:text-[#41C9E2] underline">
+                    shabnamali742@yahoo.com
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+<script>
+/* ==========================================
+   HERO FRAME SEQUENCE PLAYER
+========================================== */
+
+const totalFrames = 200;
+let currentFrame = 1;
+
+function getFramePath(frameNum) {
+    return `./day_frames/${String(frameNum).padStart(3, '0')}.png`;
+}
+
+function updateHeroFrame(progress) {
+    const frameNum = Math.max(
+        1,
+        Math.min(
+            totalFrames,
+            Math.floor(progress * (totalFrames - 1)) + 1
+        )
+    );
+
+    if (frameNum !== currentFrame) {
+        currentFrame = frameNum;
+        const img = document.getElementById('hero-frame');
+        if (img) img.src = getFramePath(frameNum);
+    }
+}
+
+function initScrollFramePlayer() {
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                const heroSection = document.getElementById('hero');
+                if (!heroSection) return;
+                const scrollY = window.scrollY;
+                const heroHeight = heroSection.offsetHeight - window.innerHeight;
+                const progress = Math.max(0, Math.min(1, scrollY / heroHeight));
+                updateHeroFrame(progress);
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+}
+
+/* ==========================================
+   CARD TILT EFFECT
+========================================== */
+
+function addTiltEffect(id) {
+    const card = document.getElementById(id);
+    if (!card) return;
+
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width;
+        const y = (e.clientY - rect.top) / rect.height;
+        const rotX = (y - 0.5) * -20;
+        const rotY = (x - 0.5) * 20;
+        card.style.transform = `perspective(1100px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.03)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1100px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+}
+
+/* ==========================================
+   NAVIGATION DOTS - UPDATED FOR 03 & 04
+========================================== */
+
+function updateActiveDot() {
+    const dots = document.querySelectorAll('.nav-dot');
+    const scrollPosition = window.scrollY + window.innerHeight * 0.4;
+
+    const sections = ['hero', 'now-section', 'studies', 'skills-section', 'connect-section'];
+
+    let activeIndex = 0;
+
+    sections.forEach((id, index) => {
+        const section = document.getElementById(id);
+        if (section && scrollPosition >= section.offsetTop) {
+            activeIndex = index;
+        }
+    });
+
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === activeIndex);
+    });
+}
+
+function scrollToSection(index) {
+    const sections = ['hero', 'now-section', 'studies', 'skills-section', 'connect-section'];
+    const target = document.getElementById(sections[index]);
+    if (target) {
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+/* ==========================================
+   INITIALIZE EVERYTHING
+========================================== */
+
+function init() {
+    initScrollFramePlayer();
+    addTiltEffect('card1');
+    addTiltEffect('card2');
+
+    window.addEventListener('scroll', updateActiveDot, { passive: true });
+    updateActiveDot();
+
+    console.log('%cPortfolio Loaded Successfully ✨', 'color:#41C9E2;font-family:monospace');
+}
+
+window.addEventListener('load', init);
+</script>
+</body>
+</html>
